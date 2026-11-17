@@ -11,7 +11,7 @@ export async function onRequestGet(context) {
 
   try {
     const response = await fetch(
-      "https://api.viceroll.gg/api/v1/affiliate/leaderboard?limit=50",
+     "https://api.viceroll.gg/api/v1/affiliate/leaderboards",
       {
         headers: {
           "x-api-key": apiKey
