@@ -22,6 +22,7 @@ export async function onRequestGet(context) {
     const data = await response.json();
 
     if (!response.ok || !data.success) {
+      console.log("ViceRoll API status:", response.status, "Response:", JSON.stringify(data));
       return Response.json(
         { error: "ViceRoll leaderboard unavailable" },
         { status: response.status }
